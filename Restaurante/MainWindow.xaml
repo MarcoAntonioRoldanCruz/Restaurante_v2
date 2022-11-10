@@ -1,0 +1,164 @@
+﻿<Window x:Class="Restaurante.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Restaurante"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900" FontFamily="Cambria" FontSize="16">
+    <TabControl TabStripPlacement="Left">
+        <!--#region Menu -->
+        <TabItem>
+            <TabItem.Header>Menú del día.</TabItem.Header>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <!--#region Imagen de fondo de mi stackpanel de la opción 1: Mostrar menú. -->
+                    <Grid.Background>
+                        <ImageBrush ImageSource="/Imagenes/Fondo.jpg" Opacity="0.5"/>
+                    </Grid.Background>
+                    <!--#endregion-->
+                    <ListView Grid.Column="0" HorizontalAlignment="Center" Margin="10" MinWidth="200">
+                        <!--#region Color de fondo de mi listview -->
+                        <ListView.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFEBFF0D"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ListView.Background>
+                        <!--#endregion-->
+
+                        <ListViewItem Margin="10" HorizontalAlignment="Center">
+                            <TextBlock>Comidas</TextBlock>
+                        </ListViewItem>
+                        
+                        <!--#region Menú Hamburguesas -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/hamburguesa.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Hamburguesas</TextBlock>
+                                    <TextBlock>$60.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú papas a la francesa -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/papas-francesa_2.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Papás a la francesa</TextBlock>
+                                    <TextBlock>$30.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú papas a la francesa -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/hot_dogs.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Hot dogs</TextBlock>
+                                    <TextBlock>$40.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú papas a la francesa -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/salchichas_fritas_2.jpg" Width="100"/>
+                                <StackPanel>
+                                    <TextBlock>Salchichas fritas</TextBlock>
+                                    <TextBlock>$30.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+                    </ListView>
+
+                    <ListView Grid.Column="1" HorizontalAlignment="Center" Margin="10" MinWidth="200">
+                        <ListView.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF58FF06"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ListView.Background>
+                        <!--#region Menú papas a la francesa -->
+
+                        <ListViewItem Margin="10" HorizontalAlignment="Center">
+                            <TextBlock>Bebidas</TextBlock>
+                        </ListViewItem>
+                        
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/refresco.jpg" Width="100" Height="70" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Refresco</TextBlock>
+                                    <TextBlock>$20.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú papas a la francesa -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/limonada.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Limonada</TextBlock>
+                                    <TextBlock>$15.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú salchicas fritas -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/naranjada.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Naranjada</TextBlock>
+                                    <TextBlock>$15.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú salchicas fritas -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/jugo.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Jugo natural</TextBlock>
+                                    <TextBlock>$20.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+
+                        <!--#region Menú salchicas fritas -->
+                        <ListViewItem Margin="0,10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Imagenes/salchichas_fritas_2.jpg" Width="100" Margin="0,0,10,0" />
+                                <StackPanel>
+                                    <TextBlock>Jugo artificial</TextBlock>
+                                    <TextBlock>$25.00</TextBlock>
+                                </StackPanel>
+                            </StackPanel>
+                        </ListViewItem>
+                        <!--#endregion-->
+                    </ListView>
+                </Grid>
+            </ScrollViewer>
+        </TabItem>
+        <!--#endregion-->
+    </TabControl>
+</Window>
