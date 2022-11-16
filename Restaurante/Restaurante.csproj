@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BootstrapIcons.Wpf, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BootstrapIcons.Wpf.1.9.2\lib\net45\BootstrapIcons.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Windows.Shell, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Windows.Shell.3.0.1.0\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
     </Reference>
@@ -119,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Imagenes\naranjada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Imagenes\restaurant-interior.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

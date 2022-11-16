@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BootstrapIcons.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF.Bootstrap.Controls;
 
 namespace Restaurante
 {
@@ -23,6 +25,16 @@ namespace Restaurante
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnAgregar_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void BtnBotonBootstrap_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hola Omar", "Saludando a Omar", MessageBoxButton.YesNoCancel, MessageBoxImage.Information);
         }
     }
 }
