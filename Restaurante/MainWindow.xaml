@@ -7,7 +7,7 @@
         xmlns:bicons="https://github.com/helluvamatt/BootstrapIcons.Wpf/"
         xmlns:bs="http://github.com/scheshan/bootstrap"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="1000" FontFamily="Cambria" FontSize="16">
+        Title="MainWindow" Height="500" Width="1000" WindowStyle="None" FontFamily="Cambria" FontSize="16" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <TabControl TabStripPlacement="Left">
         <!--#region Menu -->
         <TabItem>
@@ -44,49 +44,57 @@
 
                         <!--#region Menú Hamburguesas -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/hamburguesa.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Hamburguesas</TextBlock>
-                                    <TextBlock>$60.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnMenuHamburguesa" MouseDoubleClick="BtnMenuHamburguesa_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/hamburguesa.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Hamburguesas</TextBlock>
+                                        <TextBlock>$60.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú papas a la francesa -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/papas-francesa_2.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Papás a la francesa</TextBlock>
-                                    <TextBlock>$30.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnMenuPapas" MouseDoubleClick="BtnMenuPapas_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/papas-francesa_2.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Papás a la francesa</TextBlock>
+                                        <TextBlock>$30.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú papas a la francesa -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/hot_dogs.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Hot dogs</TextBlock>
-                                    <TextBlock>$40.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnMenuHotDogs" MouseDoubleClick="BtnMenuHotDogs_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/hot_dogs.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Hot dogs</TextBlock>
+                                        <TextBlock>$40.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú papas a la francesa -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/salchichas_fritas_2.jpg" Width="100"/>
-                                <StackPanel>
-                                    <TextBlock>Salchichas fritas</TextBlock>
-                                    <TextBlock>$30.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnSalchichas" MouseDoubleClick="BtnSalchichas_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/salchichas_fritas_2.jpg" Width="100"/>
+                                    <StackPanel>
+                                        <TextBlock>Salchichas fritas</TextBlock>
+                                        <TextBlock>$30.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
                     </ListView>
@@ -105,61 +113,71 @@
                         </ListViewItem>
 
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/refresco.jpg" Width="100" Height="70" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Refresco</TextBlock>
-                                    <TextBlock>$20.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnRefresco" MouseDoubleClick="BtnRefresco_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/refresco.jpg" Width="100" Height="70" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Refresco</TextBlock>
+                                        <TextBlock>$20.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú papas a la francesa -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/limonada.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Limonada</TextBlock>
-                                    <TextBlock>$15.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnLimonada" MouseDoubleClick="BtnLimonada_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/limonada.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Limonada</TextBlock>
+                                        <TextBlock>$15.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú salchicas fritas -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/naranjada.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Naranjada</TextBlock>
-                                    <TextBlock>$15.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnNaranjada" MouseDoubleClick="BtnNaranjada_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/naranjada.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Naranjada</TextBlock>
+                                        <TextBlock>$15.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú salchicas fritas -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/jugo.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Jugo natural</TextBlock>
-                                    <TextBlock>$20.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnJugoNatural" MouseDoubleClick="BtnJugoNatural_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/jugo.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Jugo natural</TextBlock>
+                                        <TextBlock>$20.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
 
                         <!--#region Menú salchicas fritas -->
                         <ListViewItem Margin="0,10">
-                            <StackPanel Orientation="Horizontal">
-                                <Image Source="/Imagenes/salchichas_fritas_2.jpg" Width="100" Margin="0,0,10,0" />
-                                <StackPanel>
-                                    <TextBlock>Jugo artificial</TextBlock>
-                                    <TextBlock>$25.00</TextBlock>
+                            <Button Background="Transparent" BorderBrush="Transparent" x:Name="BtnJugoArtificial" MouseDoubleClick="BtnJugoArtificial_MouseDoubleClick">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Imagenes/salchichas_fritas_2.jpg" Width="100" Margin="0,0,10,0" />
+                                    <StackPanel>
+                                        <TextBlock>Jugo artificial</TextBlock>
+                                        <TextBlock>$25.00</TextBlock>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
+                            </Button>
                         </ListViewItem>
                         <!--#endregion-->
                     </ListView>
@@ -188,14 +206,14 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <ListView Grid.Column="0" Margin="10" HorizontalAlignment="Center" MinWidth="200">
+                    <ListView x:Name="LsvMenu2" MouseDoubleClick="LsvMenu2_MouseDoubleClick" Grid.Column="0" Margin="10" HorizontalAlignment="Center" MinWidth="200" Background="Transparent" BorderBrush="Transparent">
                         <!--#region Color de fondo de mi listview -->
-                        <ListView.Background>
+                        <!--<ListView.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FFEBFF0D"/>
                                 <GradientStop Color="White" Offset="1"/>
                             </LinearGradientBrush>
-                        </ListView.Background>
+                        </ListView.Background>-->
                         <!--#endregion-->
 
                         <ListViewItem Margin="10" HorizontalAlignment="Center">
@@ -314,28 +332,31 @@
                     </ListView>
 
                     <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Margin="0,10" Style="{StaticResource PrimaryButton}" Width="200">
+                        <Button x:Name="BtnAgregarMenu2" Click="BtnAgregarMenu2_Click" Margin="0,10" Style="{StaticResource PrimaryButton}" Width="200">
                             <StackPanel Orientation="Horizontal">
                                 <bicons:BootstrapIcon Margin="10,0" Icon="PlusCircleFill"  Foreground="White"/>
                                 <TextBlock>Agregar</TextBlock>
                             </StackPanel>
                         </Button>
-                        <Button Margin="0,10" Style="{StaticResource DangerButton}" Width="200">
+                        <!--#region Boton Eliminar -->
+                        <Button x:Name="BtnEliminarMenu2" Click="BtnEliminarMenu2_Click"  Margin="0,10" Style="{StaticResource DangerButton}" Width="200">
                             <StackPanel Orientation="Horizontal">
                                 <bicons:BootstrapIcon Margin="10,0" Icon="Trash"  Foreground="White"/>
                                 <TextBlock>Eliminar</TextBlock>
                             </StackPanel>
                         </Button>
-                        <Button Margin="0,10" Style="{StaticResource SuccessButton}" Width="200">
+                        <!--#endregion-->
+                        <Button x:Name="BtnBootstrap" Click="BtnBotonBootstrap_Click" Margin="10" Width="200" Style="{StaticResource DefaultButton}" Background="MediumPurple" Foreground="White" BorderBrush="MediumPurple" >
                             <StackPanel Orientation="Horizontal">
                                 <bicons:BootstrapIcon Margin="10,0" Icon="BagHeartFill"  Foreground="White"/>
                                 <TextBlock>Finalizar compra</TextBlock>
                             </StackPanel>
                         </Button>
-                        <Button Margin="10" Width="200" Style="{StaticResource DefaultButton}" Background="MediumPurple" Foreground="White" BorderBrush="MediumPurple" >
+                        
+                        <Button x:Name="BtnExit" Click="BtnExit_Click" Margin="0,10" Style="{StaticResource SuccessButton}" Width="200">
                             <StackPanel Orientation="Horizontal">
-                                <bicons:BootstrapIcon Icon="HandIndexFill" Foreground="White"/>
-                                <TextBlock>Boton Bootstrap</TextBlock>
+                                <bicons:BootstrapIcon Margin="10,0" Icon="DoorClosedFill"  Foreground="White"/>
+                                <TextBlock>Cerrar</TextBlock>
                             </StackPanel>
                         </Button>
 
@@ -346,8 +367,7 @@
                                 <TextBlock HorizontalAlignment="Center"> Su compra </TextBlock>
                             </bs:BootstrapPanel.Header>
                             <StackPanel>
-                                <ListView>
-                                    <ListViewItem>* Hamburguesa - $60.00</ListViewItem>
+                                <ListView x:Name="LsvCompraMenu" MouseDoubleClick="LsvCompraMenu_MouseDoubleClick">
                                 </ListView>
                             </StackPanel>
                             <bs:BootstrapPanel.Footer>
@@ -355,8 +375,9 @@
                                     <TextBlock>Total a pagar</TextBlock>
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock>$</TextBlock>
-                                        <TextBox x:Name="TxtTotalPagar" Width="150">350.00</TextBox>
+                                        <TextBox x:Name="TxtTotalPagar" Width="150"></TextBox>
                                     </StackPanel>
+                                    <TextBlock></TextBlock>
                                 </StackPanel>
                             </bs:BootstrapPanel.Footer>
                         </bs:BootstrapPanel>
